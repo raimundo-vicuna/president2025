@@ -1,4 +1,4 @@
-import emailjs from 'https://cdn.emailjs.com/dist/email.min.js';
+import emailjs from '@emailjs/browser';
 
 const button = document.querySelector('.send_bt');
 
