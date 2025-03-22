@@ -21,7 +21,7 @@ function sendMail() {
         {
             from_name: userName,  
             message: userMessage, 
-            reply_to: 'raivicuna@gmail.com' 
+            reply_to: 'raimundovicunap26@alumnos.cph-cja.cl, franciscopuelmac26@alumnos.cph-cja.cl' 
         },
         PUBLIC_KEY
     )
