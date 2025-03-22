@@ -1,5 +1,4 @@
-import emailjs from '@emailjs/browser';
-
+const notification_from = document.querySelector('.notification_from')
 const button = document.querySelector('.send_bt');
 
 const SERVICE_ID = 'service_vgg1lo1';
@@ -11,7 +10,8 @@ function sendMail() {
     const userMessage = document.querySelector('.massage-bt').value.trim();
 
     if (!userName || !userMessage) {
-        button.style.backgroundColor = 'red'; 
+        notification_from.style.color = 'red'
+        notification_from.textContent = 'Completa los campos';
         return;
     }
 
@@ -26,11 +26,12 @@ function sendMail() {
         PUBLIC_KEY
     )
     .then((response) => {
-        console.log('Correo enviado con éxito', response);
-        button.style.backgroundColor = 'green'; 
+        notification_from.style.color = 'green';
+        notification_from.textContent = 'ENVIADO'; 
     })
     .catch((error) => {
-        console.error('Error al enviar el correo', error);
+        notification_from.style.color = 'red';
+        notification_from.textContent = 'Intentalo nuevamente';
     });
 }
 

@@ -1468,3 +1468,17 @@ input.email_text::placeholder {
     display: flex;
     justify-content: center;
 }
+
+.notification_from {
+    margin-bottom: -25px;
+}
+
+.aling-items-center {
+    display: flex;
+    align-items: center;
+}
+
+.banner_img img {
+    border-radius: 10% / 50%;
+    height: 50em;
+}
