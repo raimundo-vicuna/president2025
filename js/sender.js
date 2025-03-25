@@ -23,7 +23,7 @@ function sendMail() {
         {
             from_name: userName,  
             message: userMessage, 
-            to_email: "raimundovicunap26@alumnos.cph-cja.cl, franciscopuelmac26@alumnos.cph-cja.cl"
+            to_email: "raimundovicunap26@alumnos.cph-cja.cl, franciscopuelmac26@alumnos.cph-cja.cl, juangonzalezdelriegor26@alumnos.cph-cja.cl"
         },
         PUBLIC_KEY
     )
